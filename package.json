@@ -1,0 +1,54 @@
+{
+  "name": "dsh-balance-monitor",
+  "version": "1.0.0",
+  "description": "DeepSeek account balance indicator with low-balance alerts for the DeepSeek Harness Web GUI",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "docs",
+    "cordis.patch.yml",
+    "install.ps1",
+    "uninstall.ps1",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "author": "kousenlee",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kousenlee/dsh-balance-monitor.git"
+  },
+  "homepage": "https://github.com/kousenlee/dsh-balance-monitor",
+  "bugs": {
+    "url": "https://github.com/kousenlee/dsh-balance-monitor/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "balance",
+    "deepseek",
+    "web-ui"
+  ],
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  }
+}

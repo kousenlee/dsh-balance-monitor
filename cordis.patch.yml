@@ -1,0 +1,6 @@
+# dsh-balance-monitor bundle layer.
+# Inserts the balance monitor row into the current profile. The row's browser
+# half (lib/client.js) renders the always-visible balance bar in the Web GUI.
+- insert:
+    - id: balance-monitor
+      name: 'dsh-balance-monitor'
